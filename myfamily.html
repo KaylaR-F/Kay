@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+<body>
+<title>Hello! </title>
+<h1 style="text-align: center">MY WONDERFUL FAMILY </h1>
+<script type="text/javascript">
+var index = 0;
+
+function changeBanner() {
+      [].forEach.call(document.images, function(v, i) {
+          document.images[i].hidden = i !== index
+      });
+      index = (index + 1) % document.images.length;
+  }
+  window.onload = function() {
+      setInterval(changeBanner, 1000)
+};
+</script>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<body background="bck.jpg" width="2000px" height="1000px">
+
+<ul>
+  <li><a href="allaboutme.html">Home</a></li>
+  <li><a href="favorite.html">Favorite</a></li>
+  <li><a href="precious.html">Most Precious Items</a></li>
+  <li><a href="myfamily.html">My Family</a></li>
+</ul>
+
+
+<div style="text-align: center">
+ <div id="wrapper">
+  <div>
+    <img src="fam.jpg" height="400" width="350" />
+    <img src="fam2.jpg" height="500" width="450" />
+    <img src="chris.jpg" height="400" width="350" />
+    <img src="bday.jpg" height="500" width="450" />
+  </div>
+</div>
+</div>
+
+
+
+
+</body>
+</head>
+</html>
